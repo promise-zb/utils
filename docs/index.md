@@ -29,6 +29,8 @@ pnpm fmt
 
 手机端用 Expo Go 扫码。识别图纸、签名预览第一次需要联网，分别下载中文语言包和 PDF 库。
 
+安卓安装包的体积说明在 [apk.md](apk.md)。四个 CPU 平台和对应手机型号在 [android-abi.md](android-abi.md)。
+
 ## 新增工具
 
 1. 在 `packages/shared/src/index.ts` 的 `tools` 里加一项。

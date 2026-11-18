@@ -22,6 +22,7 @@ description: >-
 - 后端以后用 Go，只放 `backend/`。现在不要提前写后端。
 - wasm 只放 `utils/wasm/`，没有需要就不要加封装。
 - 文档只放 `docs/`。
+- 安卓安装包只打 arm64，体积相关设置留在 `app/app.json`。说明见 [docs/apk.md](../../../docs/apk.md)。
 - 代码保持直接。不要过度封装，不要为了一处调用抽 hook、context、工厂。
 - 不要使用 TypeScript `enum`。状态、文案用单个字段的常量映射，例如 `areaStatus`、`areaMessage`、`roomName`。
 - 组件默认导出函数。props 用一个 interface，默认值写在解构里。调用处保持短，由父组件决定是否渲染。参照 `packages/web/src/Modal.tsx`。
