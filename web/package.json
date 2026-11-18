@@ -1,0 +1,29 @@
+{
+  "name": "@local/web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@local/floor-area": "workspace:*",
+    "@local/shared": "workspace:*",
+    "@local/sign": "workspace:*",
+    "@local/ui-web": "workspace:*",
+    "pdf-lib": "1.17.1",
+    "pdfjs-dist": "5.4.149",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-router-dom": "^7.9.4",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.0"
+  }
+}

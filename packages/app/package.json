@@ -1,0 +1,12 @@
+{
+  "name": "@local/ui-app",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/Modal.tsx"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-native": "*"
+  }
+}

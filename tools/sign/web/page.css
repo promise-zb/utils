@@ -1,0 +1,220 @@
+.sign {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 8px 16px 48px;
+  color: #0f172a;
+  line-height: 1.45;
+}
+
+.sign h1 {
+  margin: 0 0 6px;
+  font-size: 1.4rem;
+}
+
+.sign .lead {
+  margin: 0 0 12px;
+  color: #64748b;
+  font-size: 0.92rem;
+}
+
+.sign .card {
+  margin-top: 14px;
+  padding: 14px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 6%);
+}
+
+.sign .card h2 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.sign .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.sign .btn {
+  appearance: none;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  color: #0f172a;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-size: 14px;
+}
+
+.sign .btn:disabled {
+  opacity: 0.45;
+}
+
+.sign .btn--primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.sign .file-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.sign .file-btn input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.sign .muted {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.sign .warn {
+  color: #b45309;
+  font-size: 13px;
+}
+
+.sign .hint {
+  margin: 10px 0 0;
+}
+
+.sign .pad-wrap {
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: 1px dashed #94a3b8;
+  border-radius: 12px;
+  background: #fff;
+  touch-action: none;
+}
+
+.sign .pad {
+  display: block;
+  width: 100%;
+  touch-action: none;
+}
+
+.sign .pager,
+.sign .stamp-chips {
+  margin-bottom: 8px;
+}
+
+.sign .chip {
+  appearance: none;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  color: #334155;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.sign .chip.is-active {
+  border-color: #2563eb;
+  color: #2563eb;
+  background: #eff6ff;
+}
+
+.sign .size {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.sign .stage {
+  overflow: auto;
+  max-height: min(70vh, 900px);
+  min-height: 160px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #e2e8f0;
+  touch-action: pan-y;
+}
+
+.sign .page {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.sign .stage.is-loading {
+  opacity: 0.65;
+}
+
+.sign .pdf-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.sign .placeholder {
+  padding: 40px 12px;
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.sign .sig {
+  position: absolute;
+  z-index: 2;
+  user-select: none;
+  cursor: grab;
+  touch-action: none;
+}
+
+.sign .sig img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  pointer-events: none;
+}
+
+.sign .sig.is-active {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+  border-radius: 4px;
+  z-index: 3;
+}
+
+.sign .sig__remove {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #0f172a;
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.sign .toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(24px + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  max-width: calc(100% - 32px);
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #0f172a;
+  color: #fff;
+  font-size: 13px;
+  z-index: 20;
+}

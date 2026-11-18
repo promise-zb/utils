@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "local-utils",
+    "slug": "local-utils",
+    "scheme": "localutils",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "dev.zhangbo.localutils",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "用于选择设计图纸并计算面积"
+        }
+      ],
+      "expo-sharing"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "@local/floor-area",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./web": "./web/index.tsx",
+    "./app": "./app/index.tsx"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@local/ui-app": "workspace:*",
+    "@local/ui-web": "workspace:*"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  },
+  "peerDependencies": {
+    "expo-image-manipulator": "*",
+    "expo-image-picker": "*",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-native": "*",
+    "react-native-webview": "*",
+    "tesseract.js": "^7.0.0"
+  },
+  "peerDependenciesMeta": {
+    "expo-image-manipulator": {
+      "optional": true
+    },
+    "expo-image-picker": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "react-native": {
+      "optional": true
+    },
+    "react-native-webview": {
+      "optional": true
+    },
+    "tesseract.js": {
+      "optional": true
+    }
+  }
+}

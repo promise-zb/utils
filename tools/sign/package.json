@@ -1,0 +1,49 @@
+{
+  "name": "@local/sign",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./web": "./web/index.tsx",
+    "./app": "./app/index.tsx"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "pdf-lib": "1.17.1",
+    "pdfjs-dist": "5.4.149"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  },
+  "peerDependencies": {
+    "expo-document-picker": "*",
+    "expo-file-system": "*",
+    "expo-sharing": "*",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-native": "*",
+    "react-native-webview": "*"
+  },
+  "peerDependenciesMeta": {
+    "expo-document-picker": {
+      "optional": true
+    },
+    "expo-file-system": {
+      "optional": true
+    },
+    "expo-sharing": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "react-native": {
+      "optional": true
+    },
+    "react-native-webview": {
+      "optional": true
+    }
+  }
+}

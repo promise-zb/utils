@@ -1,0 +1,20 @@
+{
+  "name": "local-utils",
+  "private": true,
+  "scripts": {
+    "dev:web": "pnpm --filter @local/web dev",
+    "dev:app": "pnpm --filter @local/app start",
+    "build:web": "pnpm --filter @local/web build",
+    "test": "pnpm -r --if-present test",
+    "lint": "oxlint .",
+    "fmt": "oxfmt .",
+    "fmt:check": "oxfmt --check .",
+    "check": "pnpm test && pnpm lint && pnpm --filter @local/web exec tsc --noEmit"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.79.0",
+    "oxlint": "^1.94.0",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@10.13.1"
+}

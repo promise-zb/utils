@@ -1,0 +1,11 @@
+node_modules
+.pnpm-store
+dist
+.expo
+.turbo
+coverage
+*.log
+.DS_Store
+ios
+android
+version
